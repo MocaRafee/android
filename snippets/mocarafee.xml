@@ -13,13 +13,8 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="Mocarafee/android_build_soong" remote="ore" >
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>
 
-
-  <project path="device/lineage/sepolicy" name="Mocarafee/android_device_sepolicy" remote="ore" />
+  <project path="device/lineage/sepolicy" name="Mocarafee/android_device_lineage_sepolicy" remote="ore" />
 
 
   <project path="frameworks/av" name="Mocarafee/android_frameworks_av" remote="ore" />
