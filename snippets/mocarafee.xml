@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Rom additions -->
+  <project path="android" name="Mocarafee/android" remote="ore" />
+
+  <project path="build/make" name="Mocarafee/android_build" remote="ore" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="Mocarafee/android_build_soong" remote="ore" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+
+  <project path="device/lineage/sepolicy" name="Mocarafee/android_device_sepolicy" remote="ore" />
+
+
+  <project path="frameworks/av" name="Mocarafee/android_frameworks_av" remote="ore" />
+  <project path="frameworks/base" name="Mocarafee/android_frameworks_base" remote="ore" />
+  <project path="frameworks/native" name="Mocarafee/android_frameworks_native" remote="ore" />
+
+  <project path="lineage-sdk" name="Mocarafee/android_lineage-sdk" remote="ore" />
+
+  <project path="packages/apps/Settings" name="Mocarafee/android_packages_apps_Settings" remote="ore" />
+
+  <project path="vendor/lineage" name="Mocarafee/android_vendor_lineage" remote="ore" />
+</manifest>
